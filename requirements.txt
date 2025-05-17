@@ -1,0 +1,4 @@
+flask~=3.1.0
+sqlalchemy~=2.0.40
+wtforms~=3.2.1
+werkzeug~=3.1.3
