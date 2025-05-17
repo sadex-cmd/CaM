@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+<style>
+body_text {
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+.text-block {
+  width: 50%;
+  margin: 0 auto;
+  text-align: justify;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 45%;
+}
+
+p {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+#hit_points {
+  position: absolute;
+  color: green;
+  font-size: 200%;
+  top: 80%;
+}
+
+#enemy_hp {
+  position: absolute;
+  color: red;
+  font-size: 200%;
+  top: 85%;
+  left: 10%;
+}
+
+#enemy_dmg {
+  position: absolute;
+  color: red;
+  font-size: 200%;
+  top: 85%;
+}
+
+
+#player_dmg
+{
+  position: absolute;
+  color: green;
+  font-size: 200%;
+  top: 80%;
+  left: 10%;
+}
+
+#player_arm {
+  position: absolute;
+  color: green;
+  font-size: 200%;
+  top: 80%;
+  left: 25%;
+}
+
+button {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+    margin: 10px;
+    position: absolute;
+    left: 65%;
+    bottom: 50%;
+}
+
+.button_2 {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+    margin: 10px;
+    position: absolute;
+    left: 75%;
+    bottom: 50%;
+}
+
+.button_3 {
+    font-size: 24px;
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+    margin: 10px;
+    position: absolute;
+    left: 85%;
+    bottom: 50%;
+}
+
+button:hover {
+    background-color: #960018;
+}
+
+.button_2:hover {
+    background-color: blue;
+}
+
+.button_3:hover {
+    background-color: purple;
+}
+
+body {
+    background-color: black;
+    background-image: url({{ picture_url }});
+    background-size: 40%;
+    background-position: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+</style>
+<div class="text-block">
+  <p>{{text}}</p>
+</div>
+    <p id="hit_points">Здоровье: {{ hp }};</p>
+    <p id="player_dmg">Урон вашего оружия: {{ dmg }};</p>
+    <p id="player_arm">Прочность брони: {{ arm }};</p>
+
+
+    {% if decision == True %}
+        <form action= "{{ url_for(req1) }}" method="get">
+            <button>{{but_text1}}</button>
+        </form>
+        <form action= "{{ url_for(req2) }}" method="get">
+            <button class="button_2">{{but_text2}}</button>
+        </form>
+    {% elif death == True %}
+    {% elif final == True %}
+    {% elif fight == True %}
+        <form action= "{{ url_for(req1) }}" method="get">
+            <button>Атаковать</button>
+        </form>
+        <form action= "{{ url_for(req2) }}" method="get">
+            <button class="button_2">Защищаться</button>
+        </form>
+        <form action= "{{ url_for(req3) }}" method="get">
+            <button class="button_3">Сильная атака</button>
+        </form>
+        <p id="enemy_hp">Здоровье врага: {{ enemy_hp }};</p>
+        <p id="enemy_dmg">Урон врага: {{ enemy_dmg }};</p>
+    {% else %}
+        <form action= "{{ url_for(req) }}" method="get">
+            <button>Идти дальше</button>
+        </form>
+    {% endif %}
+</main>
+</head>
