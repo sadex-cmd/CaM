@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Documentation</class>
+ <widget class="QWidget" name="Documentation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1194</width>
+    <height>760</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>13</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>441</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Документация по игре CavesAndMonsters</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>1031</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•Игра представляет из себя текстовый квест, состоящий из 6 основных комнат а также из 5 СЛУЧАЙНЫХ комнат.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>1081</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•Также в игре есть вторая сюжетная линия, которую можно открыть если вы найдете два ключа. Смотрите подсказку.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>1041</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•Каждый бой состоит из поочередного нажатия на кнопки атаки и защиты. При нажатии на кнопку сильной атаки,
+вы пропускаете ход но при этом, ваша следующая атака нанесет в два раза больше урона.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>180</y>
+     <width>1171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•После победы над врагом, с него выпадет некоторое количество золота. Чем сильнее враг - тем больше золота с него выпадет!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>210</y>
+     <width>521</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•На золото вы можете покупать снаряжение у торговца.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>240</y>
+     <width>831</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•Зелье, которое вы можете получить при разговоре со слоном, либо купив его у торговца,
+полностью восстанавливет ваше здоровье.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>300</y>
+     <width>1161</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•Шкала ОЗ показывает ваши текущие очки здоровья. Шкала прочность брони показывает, какая прочность у вашей брони.
+ Шкала показатель брони показывает, на сколько она защищает вас от урона. Шкала золото показывает, сколько у вас золота.
+ Шкала прочность щита показывает, какова прочность вашего щита.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>370</y>
+     <width>1161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>•В начале боя появляются две шкалы: ОЗ врага и урон врага. Они показывают текущее здоровье врага
+и его урон соответственно.</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="hint_but">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>440</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Подсказка</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hint_lab">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>1171</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Чтобы открыть вторую сюжетную линию, вам нужно: в комнате с орком, после победы над ним нажать на кнопку в правом
+верхнем углу, такая же кнопка только в левом нижнем углу появится после победы над пчелой. После победы над
+королем, в левом верхнем углу появится кнопка, нажав на нее вы окажетесь во второй сюжетной линии. Будьте внимательны,
+если вы пропустите хоть одну секретную комнату, то не сможете начать вторую сюжетную линию. Удачи!</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
